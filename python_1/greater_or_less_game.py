@@ -62,5 +62,5 @@ def start_game():
 
 
 # Start the game
-start_game()
+start_game() 
 
