@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bpaierjraegoe"]
+
+[ext_resource type="Texture2D" uid="uid://c07kg0i7jta4g" path="res://Sprites/New Piskel-1.png-2.png" id="1_ushfy"]
+[ext_resource type="Texture2D" uid="uid://dlbmwtk4w8k5x" path="res://Sprites/New Piskel-2.png.png" id="2_owm7s"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pjt0s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ushfy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_owm7s")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1374414469]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1089505501]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1881102072]
+position = Vector2(232, 210)
+sprite_frames = SubResource("SpriteFrames_pjt0s")
+autoplay = "default"
+frame_progress = 0.73994446
